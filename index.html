@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Huzaifa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+      body.light-mode #about,
+      body.light-mode #skills,
+      body.light-mode #projects,
+      body.light-mode #contact,
+      body.light-mode footer,
+      body.light-mode header,
+      body.light-mode input,
+      body.light-mode textarea {
+        background-color: white !important;
+        color: #111 !important;
+      }
+
+      body.light-mode #projects .bg-gray-800,
+      body.light-mode #skills .bg-gray-800,
+      body.light-mode input::placeholder,
+      body.light-mode textarea::placeholder,
+      body.light-mode #contact .bg-gray-800 {
+        background-color: #f4f4f4 !important;
+      }
+    </style>
+  </head>
+  <body class="bg-[#1f242d] text-white font-poppins scroll-smooth">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-[#1f242d]">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Logo -->
+        <a href="#home" class="text-2xl font-bold">Portfolio</a>
+
+        <!-- Hamburger Icon -->
+        <i
+          class="bx bx-menu text-4xl md:hidden cursor-pointer"
+          id="menu-icon"
+        ></i>
+
+        <!-- Navigation -->
+        <nav
+          id="nav-menu"
+          class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 bg-[#1f242d] md:bg-transparent p-4 md:p-0 rounded-lg shadow-md md:shadow-none absolute md:static top-16 left-4 right-4 md:top-0 md:left-0 md:right-0"
+        >
+          <a
+            href="#home"
+            class="active hover:text-cyan-400 text-lg md:text-base"
+            >Home</a
+          >
+          <a href="#about" class="hover:text-cyan-400 text-lg md:text-base"
+            >About</a
+          >
+          <a href="#skills" class="hover:text-cyan-400 text-lg md:text-base"
+            >Skills</a
+          >
+          <a href="#projects" class="hover:text-cyan-400 text-lg md:text-base"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-cyan-400 text-lg md:text-base"
+            >Contact</a
+          >
+        </nav>
+        <button
+          id="theme-toggle"
+          class="ml-4 w-10 h-10 flex items-center justify-center border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition"
+        >
+          <i class="bx bx-moon text-xl" id="theme-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col md:flex-row items-center justify-center container mx-auto pt-16"
+    >
+      <div class="text-center md:text-left md:w-1/2 space-y-4">
+        <h3 class="text-3xl font-bold">Hello, It's Me</h3>
+        <h1 class="text-5xl font-extrabold">Huzaifa Fayyaz</h1>
+        <h3 class="text-2xl">
+          And I'm a <span class="text-cyan-400 multiple-text"></span>
+        </h3>
+        <p class="text-lg">
+          Hi! I am a frontend web developer and an intermediary-level developer,
+          but I'm committed to giving 100% on every task. Reach out to discuss
+          projects!
+        </p>
+        <div class="flex space-x-4 justify-center md:justify-start mt-4">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="w-10 h-10 flex items-center justify-center border-2 border-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+        <a
+          href="cv/Huzaifa_Fayyaz_Resume.docx"
+          download="huzaifacv"
+          class="inline-block bg-cyan-400 text-gray-900 font-bold px-6 py-2 rounded-full mt-4 shadow-lg hover:scale-105 transition"
+          >Download CV</a
+        >
+      </div>
+      <div class="md:w-1/2 mt-10 md:mb-0">
+        <img
+          src="images/about.png"
+          alt="Huzaifa"
+          class="w-3/4 mx-auto animate-pulse"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-20 bg-[#323946] light:bg-white text-white light:text-gray-900"
+    >
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 md:mb-20">
+          <img
+            src="images/hero.png"
+            alt="Huzaifa"
+            class="rounded-lg w-3/4 mx-auto animate-pulse"
+          />
+        </div>
+        <div class="md:w-1/2 space-y-4">
+          <h2 class="text-4xl font-bold text-center md:text-left">
+            About <span class="text-cyan-400">Me</span>
+          </h2>
+          <h3 class="text-2xl">Frontend Developer</h3>
+          <p>
+            I'm a frontend developer, content writer, and blog writer.
+            Passionate about creating digital experiences that inspire and
+            engage. Let's collaborate on something amazing!
+          </p>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            class="inline-block bg-cyan-400 text-gray-900 font-bold px-6 py-2 rounded-full mt-2 hover:scale-105 transition"
+            >Contact Me!</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="py-20 bg-gray-800 light:bg-white text-white light:text-gray-900"
+    >
+      <h2 class="text-4xl font-bold text-center mb-12">
+        My <span class="text-cyan-400">Skills</span>
+      </h2>
+      <div class="container mx-auto grid md:grid-cols-2 gap-10">
+        <!-- Coding Skills -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold">Coding Skills</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>HTML</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 100%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>CSS</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 100%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>tailwindcss </span>
+                <span>100%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 100%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>TypeScript</span>
+                <span>80%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>React</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 100%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>C++</span>
+                <span>80%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold">Professional Skills</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Web & App Frontend Development</span>
+                <span>90%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Critical Thinking and analysis</span>
+                <span>90%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Content Writing</span>
+                <span>80%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-4">
+                <div
+                  class="bg-cyan-400 h-4 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-20 bg-gray-800 light:bg-white text-white light:text-gray-900"
+    >
+      <h2 class="text-4xl font-bold text-center mb-12">
+        My <span class="text-cyan-400">Projects</span>
+      </h2>
+      <div class="container mx-auto grid md:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <!-- Real Project: RR Couriers -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="images/Vector.png"
+            alt="RR Couriers Website"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">
+              RR Couriers — Industry Project
+            </h3>
+            <p class="mb-4">
+              Developed and styled the official RR Couriers website using HTML,
+              Tailwind CSS & JavaScript. Built a fully responsive site with
+              modern UI/UX, interactive navigation, and clean layout — my first
+              live project deployed for a real business.
+            </p>
+            <a
+              href="https://rrcouriers.co.uk"
+              target="_blank"
+              class="text-cyan-400 hover:underline"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 2: Dummy Project -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP._T3QlXc8EVCEtb02EzFXJgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Project 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">E-Commerce Web App</h3>
+            <p class="mb-4">
+              Developed a full-featured e-commerce application with React and
+              Node.js. Includes user authentication, product management, and
+              responsive UI design.
+            </p>
+            <a href="#" class="text-cyan-400 hover:underline">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Dummy Project -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:scale-105 transition"
+        >
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.NUiLDYD3Q_jJOC9InPNoUgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Project 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+            <p class="mb-4">
+              Built a responsive and modern portfolio website to showcase
+              projects, skills, and experience. Optimized for SEO and user
+              experience.
+            </p>
+            <a href="#" class="text-cyan-400 hover:underline">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gray-800 light:bg-white text-white light:text-gray-900"
+    >
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Contact <span class="text-cyan-400">Me!</span>
+      </h2>
+      <form class="max-w-3xl mx-auto space-y-6">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            placeholder="Full Name"
+            class="w-full p-4 rounded-md border border-cyan-400 bg-gray-900 light:bg-white text-white light:text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full p-4 rounded-md border border-cyan-400 bg-gray-900 light:bg-white text-white light:text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            required
+          />
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            placeholder="Subject"
+            class="w-full p-4 rounded-md border border-cyan-400 bg-gray-900 light:bg-white text-white light:text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            required
+          />
+          <input
+            type="tel"
+            placeholder="Mobile Number"
+            class="w-full p-4 rounded-md border border-cyan-400 bg-gray-900 light:bg-white text-white light:text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            required
+          />
+        </div>
+        <textarea
+          placeholder="Your Message"
+          class="w-full p-4 rounded-md border border-cyan-400 bg-gray-900 light:bg-white text-white light:text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400 h-32"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-cyan-400 text-gray-900 px-6 py-3 text-center justify-center items-center rounded-full shadow-lg hover:scale-105 transition w-full md:w-auto"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+    <!-- Footer Section -->
+    <footer
+      class="py-8 bg-gray-800 light:bg-white text-white light:text-gray-900 border-t-2 border-cyan-400"
+    >
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0"
+      >
+        <!-- Copyright -->
+        <p class="text-gray-400 text-center md:text-left text-sm">
+          &copy; 2025 Huzaifa | All Rights Reserved.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a
+          href="#home"
+          class="relative inline-flex items-center justify-center px-4 py-2 bg-cyan-400 text-gray-900 rounded-full border border-cyan-400 overflow-hidden group hover:scale-105 transition"
+        >
+          <i class="bx bx-up-arrow-alt text-xl group-hover:text-gray-900"></i>
+          <span class="sr-only">Back to Top</span>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Toggle mobile menu
+      const menuIcon = document.getElementById("menu-icon");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+      });
+
+      // Typed.js
+      const typed = new Typed(".multiple-text", {
+        strings: ["Frontend Developer", "Content Writer", "Blogger"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
+
+      // ScrollReveal
+      ScrollReveal().reveal(".home-content, .heading", {
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        delay: 200,
+      });
+      ScrollReveal().reveal(".home-img, .services-container", {
+        origin: "bottom",
+        distance: "50px",
+        duration: 2000,
+        delay: 200,
+      });
+
+      // Dark/Light Mode Toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+          // Light mode
+          document.body.classList.remove("bg-[#1f242d]", "text-white");
+          document.body.classList.add("bg-white", "text-gray-900");
+          themeIcon.classList.replace("bx-moon", "bx-sun");
+        } else {
+          // Dark mode
+          document.body.classList.remove("bg-white", "text-gray-900");
+          document.body.classList.add("bg-[#1f242d]", "text-white");
+          themeIcon.classList.replace("bx-sun", "bx-moon");
+        }
+      });
+    </script>
+  </body>
+</html>
